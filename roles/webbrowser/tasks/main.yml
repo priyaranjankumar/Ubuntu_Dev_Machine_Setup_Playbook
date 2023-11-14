@@ -1,0 +1,52 @@
+---
+- name: add googlechrome apt key
+  ansible.builtin.apt_key:
+    url: "{{ googlechrome_apt_key_url }}"
+    keyring: "{{ googlechrome_apt_key_keyring }}"
+
+- name: add google chrome repo
+  ansible.builtin.apt_repository:
+    repo: "{{ googlechrome_repo }}"
+    state: present
+    filename: google-chrome
+
+- name: install latest google chrome
+  ansible.builtin.apt:
+    name: google-chrome-stable
+    force_apt_get: yes
+
+- name: add edge apt key
+  ansible.builtin.apt_key:
+    url: "{{ microsoft_edge_apt_key_url }}"
+    keyring: "{{ microsoft_edge_apt_key_keyring }}"
+
+- name: add edge repo
+  ansible.builtin.apt_repository:
+    repo: "{{ microsoft_edge_repo }}"
+    state: present
+    filename: microsoft-edge
+
+- name: install latest edge
+  ansible.builtin.apt:
+    name: microsoft-edge-stable
+    force_apt_get: yes
+
+- name: add brave apt key
+  ansible.builtin.apt_key:
+    url: "{{ brave_apt_key_url }}"
+    keyring: "{{ brave_apt_key_keyring }}"
+
+- name: add brave repo
+  ansible.builtin.apt_repository:
+    repo: "{{ brave_repo }}"
+    state: present
+    filename: microsoft-edge
+
+- name: install latest brave
+  ansible.builtin.apt:
+    name: brave-browser
+    force_apt_get: yes
+- name: install snap packages
+  community.general.snap:
+    name: "{{ base_snap_apps }}"
+    state: present

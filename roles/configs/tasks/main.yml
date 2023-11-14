@@ -1,0 +1,13 @@
+---
+- block:
+    - name: Download and copy file
+      get_url:
+        url: https://raw.githubusercontent.com/priyaranjankumar/touchegg.conf/main/touchegg.conf
+        dest: /tmp/touchegg.conf
+
+    - name: Set correct permissions and copy file to destination
+      ansible.builtin.copy:
+        src: /tmp/touchegg.conf
+        dest: ~/.config/touchegg/
+        remote_src: True
+        mode: "0644"

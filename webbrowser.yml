@@ -1,0 +1,5 @@
+---
+- name: Install webbrowsers
+  hosts: localhost
+  roles:
+    - webbrowser

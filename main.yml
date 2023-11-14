@@ -1,0 +1,14 @@
+---
+- name: Import base playbook
+  import_playbook: base.yml
+
+- name: Import web browser playbook
+  import_playbook: webbrowser.yml
+
+- name: Import VSCode playbook
+  import_playbook: vscode.yml
+
+- name: Configs tasks
+  import_playbook: configs.yml
+- name: Run post-installation tasks
+  import_playbook: post_install.yml

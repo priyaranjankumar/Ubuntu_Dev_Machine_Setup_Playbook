@@ -1,0 +1,5 @@
+---
+- name: Install configs
+  hosts: localhost
+  roles:
+    - configs

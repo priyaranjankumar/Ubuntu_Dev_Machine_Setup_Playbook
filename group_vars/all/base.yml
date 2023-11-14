@@ -1,0 +1,210 @@
+---
+
+base_archiving_tools:
+  - arj
+  - cabextract
+  - file-roller
+  - mpack
+  - p7zip-full
+  - p7zip-rar
+  - rar
+  - sharutils
+  - unace
+  - unrar
+  - unzip
+  - uudeview
+  - zip
+
+base_productivity_tools:
+  - libreoffice
+
+base_system_tools:
+  - fatrace
+  - fdupes
+  - gnome-calculator
+  - gufw
+  - progress
+  - pwgen
+  - touchegg
+  #- syncthing
+
+base_system_tools_laptop:
+#  - cpufrequtils
+#  - powertop
+  - tlp
+  - tlp-rdw
+  - acpi-call-dkms  # for newer ThinkPads (X220/T420 and later)
+#  - tp-smapi-dkms  # for older ThinkPads
+
+base_download_tools:
+  - aria2
+  - axel
+  - transmission
+  - speedtest-cli
+  - wget
+  - youtube-dl
+
+base_developer_tools:
+  - 2to3
+  - android-tools-adb
+  - android-tools-fastboot
+  - ansible
+  - ansible-lint
+  - awscli
+  - bat
+  - bpython
+  - black
+  - cloc
+  - clusterssh
+  - colordiff
+  - csvkit
+  - curl
+  - default-jre-headless
+  - dos2unix
+  - entr
+  - exa
+  - expect
+  - filezilla
+  - fonts-powerline
+  - fzf
+  - g++
+  - gawk
+  - gedit-plugins
+  - geoip-bin
+  - ghostwriter
+  - git
+  - git-extras
+  - gitg
+  - golang-go
+  - htop
+  - httpie
+  - inotify-tools
+  - ipython3
+  - jq
+  - kwalify
+  - makeself
+  - meld
+  - miller
+  - moreutils
+  - most
+  - mssh
+  - ncat
+  - netcat
+  - nmap
+  - nmon
+  - nodejs
+  - pandoc
+  - parallel
+  - pcre2-utils  # provides pcre2grep and pcre2test (perl-compatible regex)
+  - pep8
+  - powerline
+  - pry
+  - pssh
+  - ptpython
+  #- puppet
+  #- puppet-lint
+  - pv
+  - pylint
+  - python3-cachecontrol
+  - python3-demjson  # provides jsonlint-py3 for json lint
+  - python3-jmespath
+  - python3-pep8
+  - python3-pip
+  - python3-poetry
+  - ranger
+  - rclone
+  - recode
+  - remmina
+  - rename
+  - ripgrep  # launch using rg from the cli
+  - ruby
+  - ruby-dev
+  - shellcheck
+  - siege
+  - socat
+  - sshfs
+  - sshpass
+  - sshuttle
+  - tig
+  - tilix
+  - tmux
+  - tmuxp
+  - tree
+  - uget
+  - xclip
+  - yamllint
+  - zeal
+
+base_developer_tools_pip3:
+  - tldr
+
+base_virtualization_tools:
+  - virtualbox
+  - virtualbox-ext-pack
+  - docker.io
+  - docker-compose
+
+base_media_tools:
+  - ffmpeg
+  - gimp
+  - imagemagick
+  - libimage-exiftool-perl
+  - mediainfo
+  - soundconverter
+  - totem
+#  - ubuntu-restricted-extras
+  - vlc
+base_snap_apps:
+  - alacritty                  
+  - android-studio             
+  - appimage2deb               
+  - arduino                    
+  - bare                       
+  - beekeeper-studio           
+  - blender                    
+  - brave                      
+  - canonical-livepatch        
+  - cmake                      
+  - code                       
+  - core                       
+  - core18                     
+  - core20                     
+  - core22                     
+  - cups                       
+  - firefox                    
+  - firmware-updater           
+  - flutter                    
+  - flutter-gallery            
+  - gedit                      
+  - ghidra                     
+  - gitkraken                  
+  - gnome-3-28-1804            
+  - gnome-42-2204              
+  - go                         
+  - gtk-common-themes          
+  - hugo                       
+  - icloud-notes-linux-client  
+  - insomnia                   
+  - intellij-idea-community    
+  - juju                       
+  - kubectl                    
+  - librepcb                   
+  - multipass                  
+  - nmap                       
+  - postman                    
+  - pycharm-community          
+  - snap-store                 
+  - snapd                      
+  - snapd-desktop-integration  
+  - sublime-text               
+  - todoist                    
+  - todolist
+base_permanent_night_light:
+  night_light_enabled: False              # set this to True for permanently turning on night light
+  night_light_schedule_automatic: False
+  night_light_schedule_from: 0
+  night_light_schedule_to: 24
+  night_light_temperature: 4200
+
+...
+

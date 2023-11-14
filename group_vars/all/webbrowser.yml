@@ -1,0 +1,55 @@
+---
+googlechrome_repo: "deb [arch=amd64] https://dl.google.com/linux/chrome/deb/ stable main"
+googlechrome_apt_key_url: "https://dl.google.com/linux/linux_signing_key.pub"
+googlechrome_apt_key_keyring: "/etc/apt/trusted.gpg.d/google.gpg"
+microsoft_edge_repo: "deb [arch=amd64] https://packages.microsoft.com/repos/edge stable main"
+microsoft_edge_apt_key_url: "https://packages.microsoft.com/keys/microsoft.asc"
+microsoft_edge_apt_key_keyring: "/etc/apt/trusted.gpg.d/microsoft.gpg"
+brave_repo: "deb [arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main"
+brave_apt_key_url: "https://brave-browser-apt-release.s3.brave.com/brave-core.asc"
+brave_apt_key_keyring: "/etc/apt/trusted.gpg.d/brave.gpg"
+base_snap_apps:
+  - alacritty                  
+  - android-studio             
+  - appimage2deb               
+  - arduino                    
+  - bare                       
+  - beekeeper-studio           
+  - blender                    
+  - brave                      
+  - canonical-livepatch        
+  - cmake                      
+  - code                       
+  - core                       
+  - core18                     
+  - core20                     
+  - core22                     
+  - cups                       
+  - firefox                    
+  - firmware-updater           
+  - flutter                    
+  - flutter-gallery            
+  - gedit                      
+  - ghidra                     
+  - gitkraken                  
+  - gnome-3-28-1804            
+  - gnome-42-2204              
+  - go                         
+  - gtk-common-themes          
+  - hugo                       
+  - icloud-notes-linux-client  
+  - insomnia                   
+  - intellij-idea-community    
+  - juju                       
+  - kubectl                    
+  - librepcb                   
+  - multipass                  
+  - nmap                       
+  - postman                    
+  - pycharm-community          
+  - snap-store                 
+  - snapd                      
+  - snapd-desktop-integration  
+  - sublime-text               
+  - todoist                    
+  - todolist

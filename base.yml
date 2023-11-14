@@ -1,0 +1,5 @@
+---
+- name: Install Base Packages
+  hosts: localhost
+  roles:
+    - base

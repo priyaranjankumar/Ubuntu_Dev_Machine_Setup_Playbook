@@ -1,0 +1,8 @@
+---
+- name: Perform post-installation tasks
+  hosts: localhost
+  tasks:
+    - name: Remove redundant packages
+      ansible.builtin.apt:
+        autoremove: yes
+        force_apt_get: yes
